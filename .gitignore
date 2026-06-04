@@ -1,0 +1,20 @@
+# secrets
+.env
+.env.*
+*.pem
+*.key
+
+# dependencies/build artifacts
+node_modules/
+dist/
+build/
+.next/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+
+# local
+.DS_Store
+.idea/
+.vscode/
