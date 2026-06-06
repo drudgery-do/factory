@@ -70,7 +70,14 @@ class OrchestratorBootstrapToolTests(unittest.TestCase):
         self.assertEqual(payload["portfolio"]["orchestrator"]["total"], 5)
         self.assertGreaterEqual(payload["portfolio"]["orchestrator"]["done"], 2)
         self.assertIn("ORCH-003", payload["items"]["orchestrator"])
-        self.assertIn(payload["next_backlog"]["ephemera-weaver"], payload["items"]["ephemera-weaver"])
+        ephemera_next = payload["next_backlog"]["ephemera-weaver"]
+        if ephemera_next is None:
+            self.assertEqual(
+                payload["portfolio"]["ephemera-weaver"]["done"],
+                payload["portfolio"]["ephemera-weaver"]["total"],
+            )
+        else:
+            self.assertIn(ephemera_next, payload["items"]["ephemera-weaver"])
 
     def test_daily_digest_generator_outputs_markdown_summary(self):
         digest = self.run_text(

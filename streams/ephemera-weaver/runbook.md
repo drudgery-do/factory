@@ -13,7 +13,7 @@
 1. Verify no source note modification.
 2. Verify no cloud upload behavior.
 3. Run automated tests.
-4. Review docs for read-only language.
+4. Review `streams/ephemera-weaver/privacy-read-only.md` for read-only and privacy language.
 5. Record findings in the PR.
 
 ## Release Flow

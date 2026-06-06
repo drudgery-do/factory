@@ -29,5 +29,5 @@ backlog:
     risk: green
   - id: EPH-008
     title: privacy/read-only docs
-    status: todo
+    status: done
     risk: green
