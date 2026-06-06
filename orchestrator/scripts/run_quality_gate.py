@@ -26,6 +26,8 @@ TOP_LEVEL_FILES = [
     "orchestrator/scripts/classify_deploy_risk.py",
     "orchestrator/scripts/score_progress.py",
     "orchestrator/scripts/summarize_status.py",
+    "orchestrator/scripts/generate_approval_card.py",
+    "orchestrator/scripts/orchestrator_data.py",
     ".codex/config.toml",
     ".codex/agents/orchestrator.toml",
     ".codex/agents/qa_reviewer.toml",

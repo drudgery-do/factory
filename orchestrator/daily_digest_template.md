@@ -41,5 +41,6 @@ Date: YYYY-MM-DD
 
 ## Operator Notes
 
-- No production deploys during ORCH-001.
-- No production secrets during ORCH-001.
+- No production deploys without explicit approval.
+- No production secrets added by bootstrap tools.
+- No product features built by ORCH-003 through ORCH-005.
