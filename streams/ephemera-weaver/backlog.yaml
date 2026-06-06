@@ -5,7 +5,7 @@ backlog:
     risk: green
   - id: EPH-002
     title: Markdown parser and SQLite index
-    status: todo
+    status: done
     risk: green
   - id: EPH-003
     title: local search API
