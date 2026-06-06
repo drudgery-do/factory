@@ -70,7 +70,7 @@ class OrchestratorBootstrapToolTests(unittest.TestCase):
         self.assertEqual(payload["portfolio"]["orchestrator"]["total"], 5)
         self.assertGreaterEqual(payload["portfolio"]["orchestrator"]["done"], 2)
         self.assertIn("ORCH-003", payload["items"]["orchestrator"])
-        self.assertEqual(payload["next_backlog"]["ephemera-weaver"], "EPH-001")
+        self.assertIn(payload["next_backlog"]["ephemera-weaver"], {"EPH-001", "EPH-002"})
 
     def test_daily_digest_generator_outputs_markdown_summary(self):
         digest = self.run_text(

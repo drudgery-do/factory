@@ -1,7 +1,7 @@
 backlog:
   - id: EPH-001
     title: fixture vault loader and source-file hash test
-    status: todo
+    status: done
     risk: green
   - id: EPH-002
     title: Markdown parser and SQLite index
