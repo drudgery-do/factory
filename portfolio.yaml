@@ -32,11 +32,11 @@ portfolio:
   orchestrator_backlog:
     - id: ORCH-001
       title: create orchestration scaffold
-      status: in_progress
+      status: done
       risk: green
     - id: ORCH-002
       title: implement quality gate runner
-      status: todo
+      status: done
       risk: green
     - id: ORCH-003
       title: implement deploy risk classifier
