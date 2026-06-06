@@ -17,7 +17,7 @@ backlog:
     risk: green
   - id: BSA-005
     title: item page generator
-    status: todo
+    status: done
     risk: green
   - id: BSA-006
     title: sitemap generator

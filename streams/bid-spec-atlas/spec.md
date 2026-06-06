@@ -38,6 +38,11 @@
 - Pay item schema implementation: `streams/bid_spec_atlas/pay_item_schema.py`
 - Every pay item row requires `source_file_id`.
 
+## Item Page Generator
+
+- Item page generator: `streams/bid_spec_atlas/item_page_generator.py`
+- Every generated item page must link to the source file and include the required footer disclaimer.
+
 ## Explicitly Not V0
 
 - paid API
