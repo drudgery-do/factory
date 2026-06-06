@@ -1,0 +1,22 @@
+name: Release Review
+
+on:
+  workflow_dispatch:
+    inputs:
+      summary:
+        description: Change summary to classify
+        required: true
+        type: string
+
+jobs:
+  classify-risk:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Classify deploy risk
+        run: python3 orchestrator/scripts/classify_deploy_risk.py --summary "${{ inputs.summary }}"

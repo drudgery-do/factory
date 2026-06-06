@@ -1,0 +1,26 @@
+stream:
+  id: funeral-price-pages
+  code: FPP
+  name: Funeral Price Pages
+  plain_english_product: Public-data SEO site for extracted public funeral home General Price List PDFs.
+  positioning: Automatically extracted public funeral price-list archive. Verify all prices with the provider.
+  primary_users:
+    - families comparing funeral costs
+    - researchers
+    - local search traffic
+  revenue_model: Display ads later, affiliate/lead testing later only after human approval.
+  non_negotiables:
+    - every price line has extraction date
+    - every price line says verify with provider
+    - low-confidence extracted data does not publish
+    - provider corrections create review issues
+    - no funeral planning advice
+    - no invented prices
+    - no price line without source file
+  red_gates:
+    - first 10 seed GPL approvals
+    - domain choice
+    - ad or affiliate applications
+    - provider disputes
+    - legal or reputation complaint
+    - broad scraper expansion

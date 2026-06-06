@@ -1,0 +1,34 @@
+backlog:
+  - id: FPP-001
+    title: seed GPL import folder and metadata schema
+    status: todo
+    risk: red
+    approval_gate: first 10 seed GPL approvals
+  - id: FPP-002
+    title: GPL extraction run schema
+    status: todo
+    risk: green
+  - id: FPP-003
+    title: line-item extractor with confidence score
+    status: todo
+    risk: yellow
+  - id: FPP-004
+    title: low-confidence publish blocker
+    status: todo
+    risk: yellow
+  - id: FPP-005
+    title: price-line timestamp and verify notice test
+    status: todo
+    risk: green
+  - id: FPP-006
+    title: funeral home page generator
+    status: todo
+    risk: green
+  - id: FPP-007
+    title: city comparison page generator
+    status: todo
+    risk: green
+  - id: FPP-008
+    title: correction form workflow
+    status: todo
+    risk: yellow

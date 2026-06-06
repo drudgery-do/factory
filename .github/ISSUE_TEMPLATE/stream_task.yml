@@ -1,0 +1,48 @@
+name: Stream task
+description: Create a scoped task for one first-wave stream.
+title: "[STREAM] "
+labels:
+  - stream-task
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      placeholder: EPH-001, BSA-001, FPP-001, ORCH-001
+    validations:
+      required: true
+  - type: dropdown
+    id: stream
+    attributes:
+      label: Stream
+      options:
+        - orchestrator
+        - ephemera-weaver
+        - bid-spec-atlas
+        - funeral-price-pages
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Expected risk
+      options:
+        - green
+        - yellow
+        - red
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Keep scope tied to FIRST_WAVE_BRIEF.md. Missing context must be a TODO or approval gate.
+    validations:
+      required: true
+  - type: textarea
+    id: gates
+    attributes:
+      label: Quality and approval gates
+      description: List automated gates, agent review gates, and any human approvals.
+    validations:
+      required: true

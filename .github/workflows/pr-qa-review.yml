@@ -1,0 +1,19 @@
+name: PR QA Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  qa-review-placeholder:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify evidence scaffold
+        run: python3 orchestrator/scripts/run_quality_gate.py

@@ -1,0 +1,14 @@
+[project]
+name = "agent-business-factory"
+strategy_source = "FIRST_WAVE_BRIEF.md"
+production_deploys_enabled = false
+production_secrets_allowed = false
+
+[quality]
+gate_command = "python3 orchestrator/scripts/run_quality_gate.py"
+risk_classifier = "python3 orchestrator/scripts/classify_deploy_risk.py"
+
+[policy]
+builder_may_approve_own_work = false
+qa_may_deploy = false
+red_gates_require_human = true

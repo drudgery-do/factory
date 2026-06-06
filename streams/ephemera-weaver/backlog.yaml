@@ -1,0 +1,33 @@
+backlog:
+  - id: EPH-001
+    title: fixture vault loader and source-file hash test
+    status: todo
+    risk: green
+  - id: EPH-002
+    title: Markdown parser and SQLite index
+    status: todo
+    risk: green
+  - id: EPH-003
+    title: local search API
+    status: todo
+    risk: green
+  - id: EPH-004
+    title: brief generator from retrieved notes
+    status: todo
+    risk: yellow
+  - id: EPH-005
+    title: export generated output to separate Markdown file
+    status: todo
+    risk: yellow
+  - id: EPH-006
+    title: license check test mode
+    status: todo
+    risk: yellow
+  - id: EPH-007
+    title: local UI scaffold
+    status: todo
+    risk: green
+  - id: EPH-008
+    title: privacy/read-only docs
+    status: todo
+    risk: green

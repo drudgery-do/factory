@@ -1,0 +1,26 @@
+task_schema:
+  required_fields:
+    - id
+    - title
+    - stream
+    - status
+    - risk
+    - evidence_pack
+  allowed_statuses:
+    - todo
+    - in_progress
+    - review
+    - blocked
+    - done
+  allowed_risks:
+    - green
+    - yellow
+    - red
+  evidence_pack_fields:
+    - summary
+    - tests_run
+    - quality_gate_output
+    - files_changed
+    - deploy_risk
+    - screenshots_or_artifacts
+    - remaining_todos

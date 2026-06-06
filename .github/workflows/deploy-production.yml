@@ -1,0 +1,14 @@
+name: Deploy Production
+
+on:
+  workflow_dispatch:
+
+jobs:
+  production-disabled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Production deploy blocked during bootstrap
+        run: |
+          echo "Production deploys are disabled during ORCH-001."
+          echo "Do not add production secrets or production deploy credentials in this bootstrap."
+          exit 1

@@ -1,0 +1,14 @@
+name: Deploy Staging
+
+on:
+  workflow_dispatch:
+
+jobs:
+  staging-disabled-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Staging deploy approval gate
+        run: |
+          echo "Staging deploy is a placeholder during ORCH-001."
+          echo "Add real staging deploy only after quality gates and release review policy are implemented."
+          exit 0
