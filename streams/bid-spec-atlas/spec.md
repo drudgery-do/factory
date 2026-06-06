@@ -16,6 +16,11 @@
 - parser golden tests
 - staging deploy
 
+## Source Ledger Schema
+
+- Source ledger implementation: `streams/bid_spec_atlas/source_ledger.py`
+- Source classes remain approval-gated until BSA-002 chooses allowed DOT sources.
+
 ## Explicitly Not V0
 
 - paid API
@@ -40,5 +45,5 @@
 ## TODOs
 
 - TODO: choose first one or two approved DOT sources.
-- TODO: define source ledger schema details before BSA-001.
+- TODO: choose DOT source class values during BSA-002 approval work.
 - TODO: choose staging host only after deploy approval.
