@@ -27,6 +27,12 @@
 - Allowlist loader: `streams/bid_spec_atlas/source_allowlist.py`
 - Approved external DOT sources remain empty until source terms and robots are reviewed.
 
+## Fixture Bid-Tab Parser
+
+- Fixture input: `fixtures/bid-spec-atlas/sample_bid_tab.txt`
+- Golden output: `fixtures/bid-spec-atlas/sample_bid_tab.golden.json`
+- Parser: `streams/bid_spec_atlas/bid_tab_parser.py`
+
 ## Explicitly Not V0
 
 - paid API

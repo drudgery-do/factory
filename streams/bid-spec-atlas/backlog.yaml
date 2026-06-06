@@ -9,7 +9,7 @@ backlog:
     risk: yellow
   - id: BSA-003
     title: one fixture bid-tab parser with golden test
-    status: todo
+    status: done
     risk: yellow
   - id: BSA-004
     title: pay item schema

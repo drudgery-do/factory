@@ -1,0 +1,41 @@
+[
+  {
+    "source_file_id": "fixture:sample_bid_tab",
+    "letting_date": "2026-04-15",
+    "state": "Fixture DOT",
+    "project_id": "BR-2026-001",
+    "item_code": "201-0001",
+    "description": "CLEARING AND GRUBBING",
+    "unit": "ACRE",
+    "quantity": 2.5,
+    "bidder": "North Road Builders",
+    "unit_price": 1200.0,
+    "total": 3000.0
+  },
+  {
+    "source_file_id": "fixture:sample_bid_tab",
+    "letting_date": "2026-04-15",
+    "state": "Fixture DOT",
+    "project_id": "BR-2026-001",
+    "item_code": "304-1200",
+    "description": "AGGREGATE BASE COURSE",
+    "unit": "TON",
+    "quantity": 150.0,
+    "bidder": "North Road Builders",
+    "unit_price": 42.5,
+    "total": 6375.0
+  },
+  {
+    "source_file_id": "fixture:sample_bid_tab",
+    "letting_date": "2026-04-15",
+    "state": "Fixture DOT",
+    "project_id": "BR-2026-001",
+    "item_code": "401-0200",
+    "description": "ASPHALT SURFACE COURSE",
+    "unit": "TON",
+    "quantity": 80.0,
+    "bidder": "North Road Builders",
+    "unit_price": 115.0,
+    "total": 9200.0
+  }
+]
