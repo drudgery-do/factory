@@ -40,13 +40,13 @@ portfolio:
       risk: green
     - id: ORCH-003
       title: implement deploy risk classifier
-      status: todo
+      status: done
       risk: green
     - id: ORCH-004
       title: implement daily digest generator
-      status: todo
+      status: done
       risk: green
     - id: ORCH-005
       title: implement approval card generator
-      status: todo
+      status: done
       risk: green
