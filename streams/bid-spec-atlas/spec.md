@@ -43,6 +43,10 @@
 - Item page generator: `streams/bid_spec_atlas/item_page_generator.py`
 - Every generated item page must link to the source file and include the required footer disclaimer.
 
+## Sitemap Generator
+
+- Sitemap generator: `streams/bid_spec_atlas/sitemap_generator.py`
+
 ## Explicitly Not V0
 
 - paid API
