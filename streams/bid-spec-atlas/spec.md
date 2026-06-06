@@ -51,6 +51,11 @@
 
 - Disclaimer enforcement test: `tests/test_bid_spec_disclaimer_enforcement.py`
 
+## Staging Smoke Gate
+
+- Smoke plan: `streams/bid_spec_atlas/staging_smoke.py`
+- TODO: approve Bid Spec Atlas staging host before running smoke checks.
+
 ## Explicitly Not V0
 
 - paid API

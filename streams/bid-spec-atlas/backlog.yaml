@@ -29,5 +29,5 @@ backlog:
     risk: green
   - id: BSA-008
     title: staging deploy smoke test
-    status: todo
+    status: done
     risk: yellow
