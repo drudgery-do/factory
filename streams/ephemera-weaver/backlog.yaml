@@ -25,7 +25,7 @@ backlog:
     risk: yellow
   - id: EPH-007
     title: local UI scaffold
-    status: todo
+    status: done
     risk: green
   - id: EPH-008
     title: privacy/read-only docs
