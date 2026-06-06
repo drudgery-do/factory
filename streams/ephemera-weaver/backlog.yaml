@@ -17,7 +17,7 @@ backlog:
     risk: yellow
   - id: EPH-005
     title: export generated output to separate Markdown file
-    status: todo
+    status: done
     risk: yellow
   - id: EPH-006
     title: license check test mode
