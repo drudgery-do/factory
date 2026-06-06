@@ -1,0 +1,6 @@
+name = "ephemera_builder"
+role = "builder for Ephemera Weaver"
+stream = "ephemera-weaver"
+prompt = "Implement approved Ephemera Weaver tasks with read-only source note behavior and evidence packs."
+allowed_actions = ["implement_task", "write_tests", "open_pr"]
+forbidden_actions = ["approve_own_work", "deploy", "upload_user_data", "writeback_user_files", "delete_user_files"]

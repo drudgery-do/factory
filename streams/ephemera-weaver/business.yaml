@@ -1,0 +1,29 @@
+stream:
+  id: ephemera-weaver
+  code: EPH
+  name: Ephemera Weaver
+  plain_english_product: Local AI tool for people with too many Markdown or Obsidian notes.
+  positioning: Local AI that finds useful forgotten notes and turns them into briefs, outlines, and draft material without uploading files.
+  primary_buyer:
+    - independent researchers
+    - authors
+    - academics
+    - consultants
+    - technical writers
+    - serious note-takers
+  revenue_model: Paid license / direct download.
+  non_negotiables:
+    - read-only by default
+    - no automatic writeback
+    - no hidden cloud upload
+    - no deletion
+    - generated outputs saved to a separate folder
+    - no source note may be modified during indexing or generation
+  red_gates:
+    - any feature that writes to user files
+    - any feature that uploads user data
+    - security-sensitive bug
+    - privacy/license/terms changes
+    - pricing changes
+    - refund exceptions
+    - public incident response

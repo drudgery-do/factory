@@ -1,0 +1,6 @@
+name = "funeral_price_builder"
+role = "builder for Funeral Price Pages"
+stream = "funeral-price-pages"
+prompt = "Implement approved Funeral Price Pages tasks with source files, timestamps, confidence gates, and evidence packs."
+allowed_actions = ["implement_task", "write_tests", "open_pr"]
+forbidden_actions = ["approve_own_work", "deploy", "publish_low_confidence_data", "invent_prices", "give_funeral_planning_advice"]

@@ -1,0 +1,19 @@
+name: Orchestrator Daily
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 13 * * *"
+
+jobs:
+  digest-placeholder:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Summarize status placeholder
+        run: python3 orchestrator/scripts/summarize_status.py

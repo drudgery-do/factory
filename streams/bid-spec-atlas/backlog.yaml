@@ -1,0 +1,33 @@
+backlog:
+  - id: BSA-001
+    title: source ledger schema
+    status: todo
+    risk: green
+  - id: BSA-002
+    title: DOT source allowlist config
+    status: todo
+    risk: yellow
+  - id: BSA-003
+    title: one fixture bid-tab parser with golden test
+    status: todo
+    risk: yellow
+  - id: BSA-004
+    title: pay item schema
+    status: todo
+    risk: green
+  - id: BSA-005
+    title: item page generator
+    status: todo
+    risk: green
+  - id: BSA-006
+    title: sitemap generator
+    status: todo
+    risk: green
+  - id: BSA-007
+    title: disclaimer enforcement test
+    status: todo
+    risk: green
+  - id: BSA-008
+    title: staging deploy smoke test
+    status: todo
+    risk: yellow

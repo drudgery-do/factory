@@ -1,0 +1,28 @@
+gate_schema:
+  required_fields:
+    - id
+    - stream
+    - name
+    - type
+    - command_or_review
+    - owner
+    - blocks_release
+  types:
+    - automated
+    - agent_review
+    - approval
+  placeholder_gates:
+    - id: ORCH-GATE-001
+      stream: portfolio
+      name: scaffold files exist
+      type: automated
+      command_or_review: python3 orchestrator/scripts/run_quality_gate.py
+      owner: orchestrator
+      blocks_release: true
+    - id: ORCH-GATE-002
+      stream: portfolio
+      name: deploy risk classification exists
+      type: automated
+      command_or_review: python3 orchestrator/scripts/classify_deploy_risk.py --summary "docs update"
+      owner: release_reviewer
+      blocks_release: true

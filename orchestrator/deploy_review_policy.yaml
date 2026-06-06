@@ -1,0 +1,36 @@
+deploy_review_policy:
+  builder_may_approve_own_work: false
+  qa_may_deploy: false
+  release_reviewer_may_approve:
+    - green
+    - yellow
+  red_requires:
+    - human_owner
+    - delegate
+  green_deploys:
+    - docs
+    - copy
+    - parser bugfix with passing golden tests
+    - sitemap regeneration
+    - non-destructive schema addition
+    - UI change with no policy/payment/security impact
+  yellow_deploys:
+    - new parser for existing approved source class
+    - new background job
+    - non-destructive migration
+    - page template change
+    - license server bugfix
+    - confidence threshold tuning
+  red_deploys:
+    - payments/KYC
+    - domain purchase/transfer
+    - ad network/affiliate application
+    - privacy policy/terms/disclaimer change
+    - auth/permissions/secrets change
+    - cloud upload feature
+    - user-file writeback feature
+    - deletion/modification of user files
+    - provider dispute response
+    - legal threat response
+    - security incident response
+    - first GPL seed approval

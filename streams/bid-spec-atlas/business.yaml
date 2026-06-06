@@ -1,0 +1,26 @@
+stream:
+  id: bid-spec-atlas
+  code: BSA
+  name: Bid Spec Atlas
+  plain_english_product: Public-data SEO site for historical DOT bid prices and pay items.
+  positioning: Historical DOT bid-price archive for researching pay items and prior letting results. Informational only.
+  primary_users:
+    - civil contractors
+    - estimators
+    - suppliers
+    - construction researchers
+    - people searching state DOT bid item history
+  revenue_model: Display ads later, data licensing later. No monetization gate in v0.
+  non_negotiables:
+    - every extracted row requires source_file_id
+    - every generated fact links back to source file
+    - failed parse creates a review issue, not fake data
+    - no bidding advice
+    - footer disclaimer appears on every page
+  required_footer: Informational archive only. Cross-reference with official state DOT letting files before submitting bids.
+  red_gates:
+    - ad network application
+    - data marketplace application
+    - source class expansion where terms or robots are unclear
+    - legal or reputation complaint
+    - removing or changing the disclaimer

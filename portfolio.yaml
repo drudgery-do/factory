@@ -1,0 +1,52 @@
+portfolio:
+  name: agent-business-factory
+  strategy_source: FIRST_WAVE_BRIEF.md
+  bootstrap_task: ORCH-001
+  production_deploys_enabled: false
+  production_secrets_allowed: false
+  streams:
+    - id: ephemera-weaver
+      code: EPH
+      name: Ephemera Weaver
+      type: local_download_app
+      revenue_model: paid_license_direct_download
+      owner_agent: ephemera_builder
+      qa_agent: qa_reviewer
+      status: scaffolded
+    - id: bid-spec-atlas
+      code: BSA
+      name: Bid Spec Atlas
+      type: public_data_programmatic_seo
+      revenue_model: future_display_ads_and_data_licensing
+      owner_agent: bid_spec_builder
+      qa_agent: qa_reviewer
+      status: scaffolded
+    - id: funeral-price-pages
+      code: FPP
+      name: Funeral Price Pages
+      type: public_data_programmatic_seo
+      revenue_model: future_display_ads_and_affiliate_after_approval
+      owner_agent: funeral_price_builder
+      qa_agent: qa_reviewer
+      status: scaffolded
+  orchestrator_backlog:
+    - id: ORCH-001
+      title: create orchestration scaffold
+      status: in_progress
+      risk: green
+    - id: ORCH-002
+      title: implement quality gate runner
+      status: todo
+      risk: green
+    - id: ORCH-003
+      title: implement deploy risk classifier
+      status: todo
+      risk: green
+    - id: ORCH-004
+      title: implement daily digest generator
+      status: todo
+      risk: green
+    - id: ORCH-005
+      title: implement approval card generator
+      status: todo
+      risk: green
