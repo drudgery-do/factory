@@ -21,6 +21,12 @@
 - Source ledger implementation: `streams/bid_spec_atlas/source_ledger.py`
 - Source classes remain approval-gated until BSA-002 chooses allowed DOT sources.
 
+## DOT Source Allowlist
+
+- Allowlist config: `streams/bid-spec-atlas/source_allowlist.toml`
+- Allowlist loader: `streams/bid_spec_atlas/source_allowlist.py`
+- Approved external DOT sources remain empty until source terms and robots are reviewed.
+
 ## Explicitly Not V0
 
 - paid API

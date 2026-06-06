@@ -1,0 +1,7 @@
+approval_required = true
+notes = [
+  "TODO: approve first one or two DOT source classes",
+  "Deny by default until source terms and robots are reviewed."
+]
+
+approved_sources = []

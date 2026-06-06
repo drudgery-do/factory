@@ -5,7 +5,7 @@ backlog:
     risk: green
   - id: BSA-002
     title: DOT source allowlist config
-    status: todo
+    status: done
     risk: yellow
   - id: BSA-003
     title: one fixture bid-tab parser with golden test
