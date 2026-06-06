@@ -25,7 +25,7 @@ backlog:
     risk: green
   - id: BSA-007
     title: disclaimer enforcement test
-    status: todo
+    status: done
     risk: green
   - id: BSA-008
     title: staging deploy smoke test

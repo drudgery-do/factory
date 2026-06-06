@@ -47,6 +47,10 @@
 
 - Sitemap generator: `streams/bid_spec_atlas/sitemap_generator.py`
 
+## Disclaimer Enforcement
+
+- Disclaimer enforcement test: `tests/test_bid_spec_disclaimer_enforcement.py`
+
 ## Explicitly Not V0
 
 - paid API
