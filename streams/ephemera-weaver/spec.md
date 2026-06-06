@@ -18,6 +18,10 @@
 - docs
 - regression tests
 
+## User-Facing Docs
+
+- `streams/ephemera-weaver/privacy-read-only.md`
+
 ## Explicitly Not V0
 
 - mobile app
