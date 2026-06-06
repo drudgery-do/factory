@@ -21,7 +21,7 @@ backlog:
     risk: green
   - id: BSA-006
     title: sitemap generator
-    status: todo
+    status: done
     risk: green
   - id: BSA-007
     title: disclaimer enforcement test
