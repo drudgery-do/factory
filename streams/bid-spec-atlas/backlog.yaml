@@ -13,7 +13,7 @@ backlog:
     risk: yellow
   - id: BSA-004
     title: pay item schema
-    status: todo
+    status: done
     risk: green
   - id: BSA-005
     title: item page generator

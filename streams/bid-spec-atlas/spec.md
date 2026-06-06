@@ -33,6 +33,11 @@
 - Golden output: `fixtures/bid-spec-atlas/sample_bid_tab.golden.json`
 - Parser: `streams/bid_spec_atlas/bid_tab_parser.py`
 
+## Pay Item Schema
+
+- Pay item schema implementation: `streams/bid_spec_atlas/pay_item_schema.py`
+- Every pay item row requires `source_file_id`.
+
 ## Explicitly Not V0
 
 - paid API
