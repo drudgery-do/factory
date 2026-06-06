@@ -1,7 +1,7 @@
 backlog:
   - id: BSA-001
     title: source ledger schema
-    status: todo
+    status: done
     risk: green
   - id: BSA-002
     title: DOT source allowlist config
