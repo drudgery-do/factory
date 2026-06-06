@@ -9,7 +9,7 @@ backlog:
     risk: green
   - id: EPH-003
     title: local search API
-    status: todo
+    status: done
     risk: green
   - id: EPH-004
     title: brief generator from retrieved notes
