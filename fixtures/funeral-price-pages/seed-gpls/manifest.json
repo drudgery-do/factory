@@ -1,0 +1,152 @@
+{
+  "manifest_version": 1,
+  "stream": "funeral-price-pages",
+  "task_id": "FPP-001",
+  "retrieved_at": "2026-06-07T01:55:00Z",
+  "approval": {
+    "status": "approved_for_local_seed_import",
+    "owner": "Human Owner via chat instruction to finish streams; Codex selected clean direct PDF seeds using FIRST_WAVE_BRIEF.md constraints",
+    "date": "2026-06-07",
+    "scope": "local PDF fixture storage, GPL metadata schema, and extraction development only",
+    "non_actions": [
+      "no production deploy",
+      "no broad scraping expansion",
+      "no browser challenge bypass",
+      "no manual HTML capture",
+      "no ad or affiliate application",
+      "no provider outreach"
+    ]
+  },
+  "seeds": [
+    {
+      "gpl_id": "fpp-seed-001-bonney-watson",
+      "provider_name": "Bonney Watson",
+      "city": "Seattle",
+      "state": "WA",
+      "source_url": "https://bonneywatson.com/wp-content/uploads/2025/06/GPL-June-2025.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "2025-06",
+      "content_sha256": "c511a3ef6717f1267eed61aa1ff6563512dae57314f4d9b3a5ecf4a071d80607",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/bonney_watson_2025_gpl.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-002-cremation-society-connecticut",
+      "provider_name": "Cremation Society of Connecticut",
+      "city": "Windsor",
+      "state": "CT",
+      "source_url": "https://cremationct.com/resources/generalpricelist/General_Price_List.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "unknown",
+      "content_sha256": "9ee8acc47fddd2b8021ee6f3c1a3d51ee2bd742cfc96f9401f34de3a4ddcbfc2",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/cremation_society_connecticut_gpl.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-003-forest-lawn",
+      "provider_name": "Forest Lawn",
+      "city": "Los Angeles / Orange County",
+      "state": "CA",
+      "source_url": "https://forest-lawn.s3-us-west-1.amazonaws.com/wp-content/uploads/2025/03/FL-250111-01-LA-OC-GPL-English-v10-0304.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "2025-03",
+      "content_sha256": "870fb18294c1caad3ae9a24db8aef2352db98dd8a126fedb55d6efac30b20467",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/forest_lawn_2025_gpl.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-004-goff-mortuary",
+      "provider_name": "Goff Mortuary",
+      "city": "Midvale / Draper / Sandy / Nephi",
+      "state": "UT",
+      "source_url": "https://irp.cdn-website.com/13d11569/files/uploaded/Goff_Mortuary_Price_List.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "unknown",
+      "content_sha256": "964fe703a9e7855d6be14d89a2fa3ce9dae3f972ca91033558619fa09ce08856",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/goff_mortuary_price_list.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-005-joldersma-klein",
+      "provider_name": "Joldersma & Klein Funeral Home",
+      "city": "Kalamazoo",
+      "state": "MI",
+      "source_url": "https://joldersma-klein.com/wp-content/uploads/2023/04/JK-GPL-04.01.23-Letter-Orientation.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "2023-04-01",
+      "content_sha256": "200067adc221184465bc3fb716a1a5524bd854a41e8193d660b901a6e4e8f6d7",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/joldersma_klein_2023_gpl.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-006-kern-funeral-home",
+      "provider_name": "Kern Funeral Home",
+      "city": "Mount Vernon",
+      "state": "WA",
+      "source_url": "https://fh-content.s3.amazonaws.com/release/Content/Media/KernFuneralHome/Kern%20GPL%20Dec%201%2C%202025.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "2025-12-01",
+      "content_sha256": "d5f89c9cd6da41f3f405c609fe6d5961860d9224eeb7ec37eb17a89f010f31ae",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/kern_funeral_home_2025_gpl.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-007-kreamer",
+      "provider_name": "Kreamer Funeral Home & Crematory",
+      "city": "Annville / Jonestown",
+      "state": "PA",
+      "source_url": "https://cdn.f1connect.net/cdn/11390D-6C0/gpl/Kreamer%20Funeral%20Home%20and%20Crematory%20Inc%20GPL.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "2025-10-15",
+      "content_sha256": "8f8a75aeb7cbbdf4f4c5183ac152e96886bc410040c6048138d6a3dd37e30578",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/kreamer_2025_gpl.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-008-legends-tri-county",
+      "provider_name": "Legends Tri-County Funeral Services",
+      "city": "Seguin",
+      "state": "TX",
+      "source_url": "https://s3.amazonaws.com/CFSV2/fileuploads/13269/GPLFall2025PDF.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "2025-10-01",
+      "content_sha256": "f94901e39b337753cfcb65832469f274ef5cc67490a90ae2998d80a5c389440b",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/legends_tri_county_2025_gpl.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-009-sharp-funeral-homes",
+      "provider_name": "Sharp Funeral Homes",
+      "city": "Flint / Grand Blanc / Fenton / Swartz Creek",
+      "state": "MI",
+      "source_url": "https://irp.cdn-website.com/ae6c5997/files/uploaded/FINAL%202_29%20Sharp_GPL_20p_E.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "unknown",
+      "content_sha256": "d1b9c360daa0ed6ce11a804312416c4cc9671e80b0c56905f05db07b6d5e5c87",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/sharp_funeral_homes_gpl.pdf",
+      "parse_status": "pending"
+    },
+    {
+      "gpl_id": "fpp-seed-010-sinai-memorial",
+      "provider_name": "Sinai Memorial",
+      "city": "San Francisco",
+      "state": "CA",
+      "source_url": "https://sinaimemorial.org/wp-content/uploads/2026/04/2026-GPL-General-Price-List-Sinai.pdf",
+      "source_type": "direct_pdf",
+      "retrieved_at": "2026-06-07T01:55:00Z",
+      "effective_date": "2026-02-19",
+      "content_sha256": "4c310e562efc321c3ccd53813f7497a726e7e2caec2128969501cf2920c36058",
+      "storage_path": "fixtures/funeral-price-pages/seed-gpls/sinai_memorial_2026_gpl.pdf",
+      "parse_status": "pending"
+    }
+  ]
+}

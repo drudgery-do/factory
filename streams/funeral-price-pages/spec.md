@@ -40,6 +40,5 @@
 
 ## TODOs
 
-- TODO: obtain human approval for first 10 seed GPLs before FPP-001.
 - TODO: define low-confidence threshold before FPP-004.
 - TODO: choose domain only through red-gate approval.
