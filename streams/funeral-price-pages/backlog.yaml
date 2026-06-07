@@ -6,11 +6,11 @@ backlog:
     approval_gate: completed with 10 clean direct GPL PDF fixtures
   - id: FPP-002
     title: GPL extraction run schema
-    status: todo
+    status: completed
     risk: green
   - id: FPP-003
     title: line-item extractor with confidence score
-    status: todo
+    status: completed
     risk: yellow
   - id: FPP-004
     title: low-confidence publish blocker
