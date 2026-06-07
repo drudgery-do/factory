@@ -241,15 +241,30 @@ def check_workflow_deploy_safety() -> dict[str, object]:
         failures.append("production workflow must exit 1 during bootstrap")
     if "production deploys are disabled" not in production:
         failures.append("production workflow must state deploys are disabled")
-    if "placeholder" not in staging:
-        failures.append("staging workflow must remain placeholder-only")
+    for required_term in [
+        "build_staging_site.py",
+        "smoke_staging_site.py",
+        "actions/upload-artifact",
+        "first-wave-staging-site",
+    ]:
+        if required_term not in staging:
+            failures.append(f"staging workflow must include {required_term}")
+    for forbidden_term in [
+        "deploy-production",
+        "production_secret",
+        "prod_secret",
+        "stripe_secret",
+        "adsense",
+    ]:
+        if forbidden_term in staging:
+            failures.append(f"staging workflow must not reference {forbidden_term}")
     if "production_deploys_enabled = false" not in config:
         failures.append("codex config must disable production deploys")
     if "production_secrets_allowed = false" not in config:
         failures.append("codex config must disallow production secrets")
     return make_check(
         not failures,
-        "Deploy workflows remain blocked or placeholder-only during bootstrap.",
+        "Deploy workflows keep production blocked and require staging build/smoke artifacts.",
         {"failures": failures},
     )
 
