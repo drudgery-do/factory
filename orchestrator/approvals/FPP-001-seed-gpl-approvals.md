@@ -17,19 +17,27 @@ Decision owner: Human Owner or Delegate
 Matched rules: first_gpl
 Required approver roles: human_owner, delegate
 
-FPP-001 requires the first 10 seed GPL approvals before any seed import folder,
-metadata schema tied to real PDFs, crawler work, or extraction work proceeds.
+FPP-001 requires the first 10 clean seed GPL PDF approvals before any seed
+import folder, metadata schema tied to real PDFs, crawler work, or extraction
+work proceeds.
 
 ## What To Approve
 
-Approve whether this list is acceptable as a seed corpus for local import and
-extraction development. This is a source-suitability approval, not a price,
-legal, medical, financial, or consumer-advice certification.
+Approve whether a final list of 10 direct GPL PDF sources is acceptable as the
+seed corpus for local import and extraction development. This is a
+source-suitability approval, not a price, legal, medical, financial, or
+consumer-advice certification.
+
+The table below is not the approved seed corpus. It is a Codex-assessed source
+discovery shortlist. It contains useful public GPL/price-list candidates, but
+some entries are official HTML pages or browser-readable sources rather than
+clean direct PDF fixtures. FPP-001 remains blocked until this shortlist is
+converted into, or replaced by, 10 clean direct PDF fixture sources.
 
 Approval means:
 
-- the listed sources are acceptable inputs for FPP-001 local seed import work
-- the builder may download/store local copies for test fixtures and metadata
+- the listed final direct PDF sources are acceptable inputs for FPP-001 local seed import work
+- the builder may download/store local PDF copies for test fixtures and metadata
 - the builder may write extraction code against these seed sources
 - extracted facts must still cite the source file and carry the verify-with-provider notice
 
@@ -58,7 +66,7 @@ human owner. For this seed list, Codex assessed:
 
 Codex did not assess, and cannot approve on behalf of the owner:
 
-- whether the source list is strategically acceptable for the business
+- whether the final PDF source list is strategically acceptable for the business
 - whether the listed providers should be included in the first seed corpus
 - whether any extracted prices are accurate, current, or suitable for publication
 - whether production crawling, publication, outreach, ads, affiliates, or deployment should happen
@@ -66,30 +74,35 @@ Codex did not assess, and cannot approve on behalf of the owner:
 ## How To Review The Remaining Approval
 
 Codex has already checked the mechanical source-suitability questions below and
-recorded the evidence in the table. The remaining owner review is only:
+recorded the evidence in the table. This table should be used as a source
+discovery shortlist, not as approval for FPP-001. The remaining work before
+approval is:
 
-1. Are these 10 public GPL/price-list sources acceptable as the first development seed corpus?
-2. Should any source be rejected for business, reputation, legal, or strategy reasons?
-3. Are the noted command-line access constraints acceptable for manual seed fixture creation?
+1. Convert or replace the shortlist with 10 clean direct GPL PDF sources.
+2. Confirm each final source can be stored as a local PDF fixture.
+3. Reject any source that requires browser challenge bypass, scraping expansion, or manual HTML capture for the seed import.
+4. Keep only sources that remain acceptable for business, reputation, legal, and strategy reasons.
 
-If the answer is yes for 1 and 3, and no for 2, the seed corpus can be approved
-for FPP-001 development. Price accuracy is handled later by source citations,
-timestamps, confidence scoring, and verify-with-provider notices.
+If all four are true, the final PDF seed corpus can be approved for FPP-001
+development. Price accuracy is handled later by source citations, timestamps,
+confidence scoring, and verify-with-provider notices.
 
 ## Required Approval Fields
 
 Approve exactly one seed list containing 10 public funeral home General Price
-List sources. Each source must be a direct PDF URL or an official provider page
-that links to a GPL PDF.
+List PDF sources. Each final source must resolve to a direct PDF that can be
+stored locally as a fixture without login, payment, browser challenge bypass,
+or manual HTML capture.
 
 For each of the 10 seed GPLs, approval must include:
 
 - provider name
 - city and state
 - source URL
-- source type: direct PDF or official provider page
+- source type: direct PDF
 - access check: public, no login, no payment wall
 - terms/robots check: no known restriction blocking archive/extraction review
+- local PDF fixture path
 - Codex source assessment evidence
 - approval owner
 - approval date
@@ -102,8 +115,9 @@ assessment:
 - whether the source can be accessed without login or payment
 - whether site terms or robots instructions prohibit the planned access
 - whether the provider/location is identifiable
+- whether the final source is a clean PDF fixture source
 
-## Approval Table
+## Discovery Shortlist
 
 | # | Provider name | City, state | Source URL | Source type | Codex source assessment | Access / robots evidence | Approval owner | Approval date | Decision |
 |---|---|---|---|---|---|---|---|---|---|
@@ -120,19 +134,22 @@ assessment:
 
 ## Copy-Paste Approval Statement
 
-Approved for FPP-001: use the 10 GPL sources listed above as the seed set for
-local import-folder and metadata-schema work. This approval covers local source
+Approved for FPP-001 only after this card contains 10 final direct GPL PDF
+sources with local fixture paths: use those 10 GPL PDFs as the seed set for
+local import-folder and metadata-schema work. This approval covers local PDF
 download/storage for the seed set, metadata indexing, extraction fixture work,
 and staging-only verification. It does not approve production deploy, domain
-selection, ad/affiliate applications, broad scraping, or outreach to providers.
-This approval does not certify that listed prices are accurate or current.
+selection, ad/affiliate applications, broad scraping, browser challenge bypass,
+manual HTML capture, or outreach to providers. This approval does not certify
+that listed prices are accurate or current.
 
 ## Evidence Pack
 
-- PR: PR that adds the completed approval table and Codex source assessment.
+- PR: PR that adds the completed final PDF approval table and Codex source assessment.
 - Tests: `python3 -m unittest discover -s tests -p 'test_*.py' -v`
 - Quality gate output: `python3 orchestrator/scripts/run_quality_gate.py`
-- Artifacts: completed approval table with 10 assessed GPL source URLs and remaining owner decision fields.
+- Artifacts: completed final approval table with 10 direct GPL PDF source URLs,
+  local fixture paths, and remaining owner decision fields.
 - Rollback plan: revert the approval-table PR and keep `FPP-001` blocked.
 
 ## Explicit Non-Actions
