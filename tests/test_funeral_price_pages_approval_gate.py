@@ -15,6 +15,11 @@ class FuneralPricePagesApprovalGateTests(unittest.TestCase):
         self.assertIn("status: blocked", backlog)
         self.assertIn("approval_gate: first 10 seed GPL approvals", backlog)
         self.assertIn("Risk classification: red", card)
+        self.assertIn("## What To Approve", card)
+        self.assertIn("## Approval Table", card)
+        self.assertIn("provider name", card)
+        self.assertIn("source URL", card)
+        self.assertIn("Copy-Paste Approval Statement", card)
         self.assertIn("No seed GPLs imported.", card)
 
 
