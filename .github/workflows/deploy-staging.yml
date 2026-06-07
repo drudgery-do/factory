@@ -1,14 +1,33 @@
 name: Deploy Staging
 
 on:
+  pull_request:
   workflow_dispatch:
+    inputs:
+      base_url:
+        description: Staging base URL used for generated sitemaps and smoke metadata.
+        required: true
+        default: https://staging.example.test
 
 jobs:
-  staging-disabled-placeholder:
+  build-staging-artifact:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      STAGING_BASE_URL: ${{ github.event.inputs.base_url || 'https://staging.example.test' }}
     steps:
-      - name: Staging deploy approval gate
-        run: |
-          echo "Staging deploy is a placeholder during ORCH-001."
-          echo "Add real staging deploy only after quality gates and release review policy are implemented."
-          exit 0
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build first-wave staging site
+        run: python3 orchestrator/scripts/build_staging_site.py --output-dir dist/staging --base-url "$STAGING_BASE_URL"
+      - name: Smoke first-wave staging site
+        run: python3 orchestrator/scripts/smoke_staging_site.py --output-dir dist/staging
+      - name: Upload first-wave staging site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: first-wave-staging-site
+          path: dist/staging
+          retention-days: 14
