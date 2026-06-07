@@ -1,9 +1,9 @@
 backlog:
   - id: FPP-001
     title: seed GPL import folder and metadata schema
-    status: blocked
+    status: completed
     risk: red
-    approval_gate: first 10 seed GPL approvals
+    approval_gate: completed with 10 clean direct GPL PDF fixtures
   - id: FPP-002
     title: GPL extraction run schema
     status: todo
