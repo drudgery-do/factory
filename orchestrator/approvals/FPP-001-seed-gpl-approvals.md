@@ -22,6 +22,44 @@ metadata schema tied to real PDFs, crawler work, or extraction work proceeds.
 
 ## What To Approve
 
+Approve whether this list is acceptable as a seed corpus for local import and
+extraction development. This is a source-suitability approval, not a price,
+legal, medical, financial, or consumer-advice certification.
+
+Approval means:
+
+- the listed sources are acceptable inputs for FPP-001 local seed import work
+- the builder may download/store local copies for test fixtures and metadata
+- the builder may write extraction code against these seed sources
+- extracted facts must still cite the source file and carry the verify-with-provider notice
+
+Approval does not mean:
+
+- the approver certifies that any price is current or accurate
+- the approver endorses any provider
+- the approver approves publication of extracted prices
+- the approver approves production deploy, domain choice, ads, affiliates, outreach, or scraping expansion
+
+The approver should reject or request changes if the seed list is not a
+reasonable starting corpus, if a listed source does not look like an official
+public GPL source, or if a listed source creates legal/reputation discomfort.
+
+## How To Review This Without Being A Funeral Pricing Expert
+
+For each candidate, check only these source-suitability questions:
+
+1. Does the provider/source name match the linked URL well enough to be plausible?
+2. Is the URL public and reachable without login or payment?
+3. Does the page/PDF identify itself as a General Price List, GPL, or funeral price list?
+4. Is the provider location identifiable?
+5. Is there any obvious reason this source should not be used as a development seed?
+
+If the answer is yes for 1-4 and no for 5, the candidate can be approved for
+seed development. Price accuracy is handled later by source citations,
+timestamps, confidence scoring, and verify-with-provider notices.
+
+## Required Approval Fields
+
 Approve exactly one seed list containing 10 public funeral home General Price
 List sources. Each source must be a direct PDF URL or an official provider page
 that links to a GPL PDF.
@@ -67,6 +105,7 @@ local import-folder and metadata-schema work. This approval covers local source
 download/storage for the seed set, metadata indexing, extraction fixture work,
 and staging-only verification. It does not approve production deploy, domain
 selection, ad/affiliate applications, broad scraping, or outreach to providers.
+This approval does not certify that listed prices are accurate or current.
 
 ## Evidence Pack
 
