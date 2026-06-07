@@ -14,7 +14,7 @@ backlog:
     risk: yellow
   - id: FPP-004
     title: low-confidence publish blocker
-    status: todo
+    status: completed
     risk: yellow
   - id: FPP-005
     title: price-line timestamp and verify notice test
