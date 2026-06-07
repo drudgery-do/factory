@@ -20,6 +20,10 @@ class FuneralPricePagesApprovalGateTests(unittest.TestCase):
         self.assertIn("provider name", card)
         self.assertIn("source URL", card)
         self.assertIn("Copy-Paste Approval Statement", card)
+        self.assertIn("California Cremation & Burial", card)
+        self.assertIn("Kern Funeral Home", card)
+        self.assertIn("Walker Sanderson Funeral Home & Crematory", card)
+        self.assertEqual(card.count("| PENDING | PENDING | PENDING |"), 10)
         self.assertIn("No seed GPLs imported.", card)
 
 

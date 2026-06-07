@@ -49,16 +49,16 @@ Do not approve a source if any of these are unclear:
 
 | # | Provider name | City, state | Source URL | Source type | Public access check | Terms/robots check | Approval owner | Approval date | Decision |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 |  |  |  |  |  |  |  |  |  |
-| 2 |  |  |  |  |  |  |  |  |  |
-| 3 |  |  |  |  |  |  |  |  |  |
-| 4 |  |  |  |  |  |  |  |  |  |
-| 5 |  |  |  |  |  |  |  |  |  |
-| 6 |  |  |  |  |  |  |  |  |  |
-| 7 |  |  |  |  |  |  |  |  |  |
-| 8 |  |  |  |  |  |  |  |  |  |
-| 9 |  |  |  |  |  |  |  |  |  |
-| 10 |  |  |  |  |  |  |  |  |  |
+| 1 | California Cremation & Burial | San Diego / National City, CA | https://www.californiacremation.com/general-price-list | Official provider GPL page | Public page observed; no login or payment wall | No blocker observed in public page; human review required | PENDING | PENDING | PENDING |
+| 2 | Kern Funeral Home | Mount Vernon, WA | https://fh-content.s3.amazonaws.com/release/Content/Media/KernFuneralHome/Kern%20GPL%20Dec%201%2C%202025.pdf | Direct GPL PDF linked from official provider page | Public PDF observed; no login or payment wall | No blocker observed in public page/PDF; human review required | PENDING | PENDING | PENDING |
+| 3 | Hawthorne Funeral Home & Memorial Park | Mount Vernon, WA | https://www.hawthornefh.com/general-price-list | Official provider GPL page with PDF download | Public page observed; no login or payment wall | No blocker observed in public page; human review required | PENDING | PENDING | PENDING |
+| 4 | Bunker Family Funerals - Garden Chapel | Mesa, AZ | https://www.bunkerfuneral.com/wp-content/uploads/2025/10/2025-Garden-Chapel-General-Price-List-r5.pdf | Direct GPL PDF from provider domain | Public PDF observed; no login or payment wall | No blocker observed in public PDF; human review required | PENDING | PENDING | PENDING |
+| 5 | Simple Cremation Montana & Sunset Funeral Service | Helena, MT | https://www.simplecremationmt.com/gpl | Official provider GPL page with PDF download | Public page observed; no login or payment wall | No blocker observed in public page; human review required | PENDING | PENDING | PENDING |
+| 6 | Lanman Funeral Home, Inc. | Cherokee / Helena / Okeene / Medford, OK | https://www.lanmanfuneralhome.com/services/general-price-list | Official provider GPL page | Public page observed; no login or payment wall | No blocker observed in public page; human review required | PENDING | PENDING | PENDING |
+| 7 | Joldersma & Klein Funeral Home | Kalamazoo, MI | https://joldersma-klein.com/wp-content/uploads/2023/04/JK-GPL-04.01.23-Letter-Orientation.pdf | Direct GPL PDF linked from official provider page | Public PDF observed; no login or payment wall | No blocker observed in public page/PDF; human review required | PENDING | PENDING | PENDING |
+| 8 | Remick & Gendron Funeral Home | Hampton, NH | https://www.remickgendron.com/funeral-pricing/general-price-list | Official provider GPL page | Public page observed; no login or payment wall | No blocker observed in public page; human review required | PENDING | PENDING | PENDING |
+| 9 | Coyle Funeral and Cremation Services | Toledo, OH | https://www.coylefuneralhome.com/our-pricing-and-resources/general-price-list | Official provider GPL page with PDF link | Public page observed; no login or payment wall | No blocker observed in public page; human review required | PENDING | PENDING | PENDING |
+| 10 | Walker Sanderson Funeral Home & Crematory | Provo, UT | https://www.walkersanderson.com/price-list | Official provider GPL page with PDF download | Public page observed; no login or payment wall | No blocker observed in public page; human review required | PENDING | PENDING | PENDING |
 
 ## Copy-Paste Approval Statement
 
