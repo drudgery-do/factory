@@ -18,17 +18,17 @@ backlog:
     risk: yellow
   - id: FPP-005
     title: price-line timestamp and verify notice test
-    status: todo
+    status: completed
     risk: green
   - id: FPP-006
     title: funeral home page generator
-    status: todo
+    status: completed
     risk: green
   - id: FPP-007
     title: city comparison page generator
-    status: todo
+    status: completed
     risk: green
   - id: FPP-008
     title: correction form workflow
-    status: todo
+    status: completed
     risk: yellow
